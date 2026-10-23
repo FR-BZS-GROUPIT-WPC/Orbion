@@ -1,0 +1,310 @@
+/* =========================
+   ATOS SSO THEME CSS
+   ========================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Full background */
+body.sso {
+    background:
+        radial-gradient(circle at left bottom,
+            rgba(255, 190, 120, 0.9) 0%,
+            rgba(155, 80, 255, 0.55) 18%,
+            rgba(20, 10, 60, 0.85) 38%,
+            rgba(0, 0, 0, 1) 60%),
+        radial-gradient(circle at right top,
+            rgba(80, 140, 255, 0.85) 0%,
+            rgba(150, 90, 255, 0.4) 22%,
+            rgba(0, 0, 0, 1) 55%),
+        #000000;
+
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Top logo */
+.top-bar {
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    z-index: 10;
+}
+
+.top-bar-brand svg {
+    width: 170px;
+    fill: #ffffff;
+}
+
+/* Main container */
+.contentsso {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-bottom: 70px;
+    box-sizing: border-box;
+}
+
+/* Login card */
+.sso-box {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 6px;
+    width: 260px;
+    padding: 28px 24px;
+    text-align: center;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.45),
+        0 0 25px rgba(130, 90, 255, 0.25);
+}
+
+/* Title */
+.sso-box h3 {
+    margin: 0 0 25px;
+    color: #6f6f6f;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Legend text */
+.sso-box legend {
+    border: none;
+    margin-bottom: 25px;
+    color: #5f5f5f;
+    font-size: 16px;
+}
+
+/* Login button */
+.sso-box .btn {
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    padding: 14px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    background: linear-gradient(
+        90deg,
+        #8b4ef7 0%,
+        #a05cff 100%
+    );
+
+    transition: all 0.3s ease;
+}
+
+.sso-box .btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 20px rgba(155, 80, 255, 0.45);
+}
+
+/* Alternative login */
+.alternative {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.alternative h2 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+/* Alternative buttons */
+.alternative ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.alternative li button {
+    background: transparent;
+    border: none;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Circle icons */
+.alternative li button span {
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.95);
+
+    color: #6c6c6c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+
+    transition: all 0.3s ease;
+}
+
+.alternative li button:hover span {
+    background: #9b59ff;
+    color: #fff;
+
+    transform: scale(1.05);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 8px 20px 10px;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.28);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-top: 1px solid rgba(255,255,255,0.10);
+
+    color: rgba(255,255,255,0.88);
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+
+    z-index: 100;
+}
+
+/* Copyright text */
+footer p {
+    margin: 0 0 4px 0;
+    padding: 0;
+}
+
+/* Footer nav */
+footer nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer list */
+footer nav ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+/* Footer list items */
+footer nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer links */
+footer nav ul li a {
+    color: rgba(255,255,255,0.92);
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 400;
+
+    white-space: nowrap;
+
+    transition:
+        opacity 0.2s ease,
+        color 0.2s ease;
+}
+
+footer nav ul li a:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .sso-box {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .alternative ul {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .alternative li button span {
+        width: 48px;
+        height: 48px;
+    }
+
+    footer {
+        padding: 8px 12px;
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    footer nav ul {
+        gap: 10px;
+    }
+
+    footer nav ul li a {
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,166 @@
+.lpf_small_auth_method {
+    border: 0px; 
+}
+
+/** [AUTO GENERATED] colors variable, do not modify **/
+:root {
+
+/* primary colors */
+--primary-source-evd: #006878;
+--on-primary-source-evd: #ffffff;
+
+--primary-evd: #006878;
+--on-primary-evd: #ffffff;
+--primary-container-evd: #a6eeff;
+--on-primary-container-evd: #001f25;
+
+--primary-lighter-evd: #2f8192;
+--on-primary-lighter-evd: #ffffff;
+--primary-lighter-container-evd: #d6f6ff;
+--on-primary-lighter-container-evd: #002a32;
+
+--primary-darker-evd: #004e5b;
+--on-primary-darker-evd: #f8fdff;
+--primary-darker-container-evd: #86d2e4;
+--on-primary-darker-container-evd: #001418;
+
+/* secondary colors */
+--secondary-evd: #526165;
+--on-secondary-evd: #ffffff;
+--secondary-container-evd: #d5e5ea;
+--on-secondary-container-evd: #0f1e21;
+
+--secondary-lighter-evd: #6a7a7e;
+--on-secondary-lighter-evd: #ffffff;
+--secondary-lighter-container-evd: #e3f4f8;
+--on-secondary-lighter-container-evd: #19282c;
+
+--secondary-darker-evd: #3a494d;
+--on-secondary-darker-evd: #f8fdff;
+--secondary-darker-container-evd: #b9c9ce;
+--on-secondary-darker-container-evd: #041316;
+
+/* tertiary colors */
+--tertiary-source-evd: #006878;
+--on-tertiary-source-evd: #ffffff;
+
+--tertiary-evd: #006878;
+--on-tertiary-evd: #ffffff;
+--tertiary-container-evd: #a6eeff;
+--on-tertiary-container-evd: #001f25;
+
+--tertiary-lighter-evd: #2f8192;
+--on-tertiary-lighter-evd: #ffffff;
+--tertiary-lighter-container-evd: #d6f6ff;
+--on-tertiary-lighter-container-evd: #002a32;
+
+--tertiary-darker-evd: #004e5b;
+--on-tertiary-darker-evd: #f8fdff;
+--tertiary-darker-container-evd: #86d2e4;
+--on-tertiary-darker-container-evd: #001418;
+
+/* error colors */
+--error-evd: #ba1a1a;
+--on-error-evd: #ffffff;
+--error-container-evd: #ffdad6;
+--on-error-container-evd: #410002;
+
+--error-lighter-evd: #de3730;
+--on-error-lighter-evd: #ffffff;
+--error-lighter-container-evd: #ffedea;
+--on-error-lighter-container-evd: #540003;
+
+--error-darker-evd: #93000a;
+--on-error-darker-evd: #fffbff;
+--error-darker-container-evd: #ffb4ab;
+--on-error-darker-container-evd: #2d0001;
+
+/* warning colors */
+--warning-evd: #bd004a;
+--on-warning-evd: #ffffff;
+--warning-container-evd: #ffd9dd;
+--on-warning-container-evd: #400014;
+
+--warning-lighter-evd: #e22761;
+--on-warning-lighter-evd: #ffffff;
+--warning-lighter-container-evd: #ffecee;
+--on-warning-lighter-container-evd: #53001c;
+
+--warning-darker-evd: #900037;
+--on-warning-darker-evd: #fffbff;
+--warning-darker-container-evd: #ffb2bd;
+--on-warning-darker-container-evd: #2c000b;
+
+/* success colors */
+--success-evd: #006c46;
+--on-success-evd: #ffffff;
+--success-container-evd: #4cffb3;
+--on-success-container-evd: #002112;
+
+--success-lighter-evd: #00885a;
+--on-success-lighter-evd: #ffffff;
+--success-lighter-container-evd: #bfffd9;
+--on-success-lighter-container-evd: #002c1a;
+
+--success-darker-evd: #005234;
+--on-success-darker-evd: #f4fff5;
+--success-darker-container-evd: #00e298;
+--on-success-darker-container-evd: #00150a;
+
+/* info colors */
+--info-evd: #006877;
+--on-info-evd: #ffffff;
+--info-container-evd: #a4eeff;
+--on-info-container-evd: #001f25;
+
+--info-lighter-evd: #43808c;
+--on-info-lighter-evd: #ffffff;
+--info-lighter-container-evd: #d5f7ff;
+--on-info-lighter-container-evd: #002a32;
+
+--info-darker-evd: #004e5a;
+--on-info-darker-evd: #f7fdff;
+--info-darker-container-evd: #94d0de;
+--on-info-darker-container-evd: #001418;
+
+/* Background and surface colors */
+--surface-container-color: #eeeeee;
+--surface-container-high-color: #e8e8e8;
+--surface-container-highest-color: #e2e2e3;
+--surface-container-low-color: #f3f3f4;
+--surface-container-lowest-color: #ffffff;
+
+--background-evd: #fcfcfc;
+--on-background-evd: #1a1c1c;
+--surface-evd: #fcfcfc;
+--on-surface-evd: #1a1c1c;
+--surface-variant-evd: #dee3e5;
+--on-surface-variant-evd: #424849;
+--outline-evd: #72787a;
+--outline-variant-evd: #c2c7c9;
+--shadow-evd: #000000;
+--scrim-evd: #000000;
+--inverse-surface-evd: #2f3131;
+--inverse-on-surface-evd: #f0f1f1;
+--inverse-primary-evd: #86d2e4;
+
+/* RGB colors */
+--primary-evd-rgb: 0, 104, 120;
+--secondary-evd-rgb: 82, 97, 101;
+--tertiary-evd-rgb: 0, 104, 120;
+--error-evd-rgb: 186, 26, 26;
+--shadow-evd-rgb: 0, 0, 0;
+--scrim-evd-rgb: 0, 0, 0;
+--inverse-surface-evd-rgb: 47, 49, 49;
+--inverse-primary-evd-rgb: 134, 210, 228;
+--surface-evd-rgb: 252, 252, 252;
+--surface-variant-evd-rgb: 222, 227, 229;
+--outline-evd-rgb: 114, 120, 122;
+--outline-variant-evd-rgb: 194, 199, 201;
+--background-evd-rgb: 252, 252, 252;
+--warning-evd-rgb: 189, 0, 74;
+--success-evd-rgb: 0, 108, 70;
+--info-evd-rgb: 0, 104, 119;
+
+}
+/** [/AUTO GENERATED] end auto generated **/

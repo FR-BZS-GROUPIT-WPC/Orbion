@@ -1,0 +1,1021 @@
+/* =====================================================
+   ATOS SSO AUTHENTICATION PAGE
+   CLEAN CONSOLIDATED VERSION
+===================================================== */
+
+:root {
+    --accent-color: #9b59f6;
+    --accent-dark: #914ff4;
+    --text-color: #383838;
+}
+
+
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #000;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+    color: var(--text-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* =====================================================
+   BODY / BACKGROUND
+===================================================== */
+
+body {
+    background:
+        radial-gradient(
+            ellipse at 15% 70%,
+            rgba(115, 45, 220, 0.55) 0%,
+            rgba(30, 10, 70, 0.35) 25%,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse at 85% 20%,
+            rgba(40, 80, 220, 0.55) 0%,
+            rgba(20, 10, 70, 0.30) 28%,
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #020207 0%,
+            #090414 45%,
+            #000000 100%
+        );
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* =====================================================
+   TOP ATOS LOGO
+===================================================== */
+
+.top-bar {
+    position: absolute;
+
+    top: 25px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    z-index: 20;
+}
+
+.top-bar-brand {
+    display: inline-block;
+}
+
+.top-bar-brand svg {
+    width: 205px;
+    max-width: 80%;
+    height: auto;
+}
+
+.top-bar-brand svg path {
+    fill: #ffffff;
+}
+
+.top-bar-brand img {
+    width: 205px;
+    max-width: 80%;
+    height: auto;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.contentsso {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    padding-top: 35px;
+    padding-bottom: 75px;
+}
+
+
+/* =====================================================
+   PKI / LOGIN CARD
+===================================================== */
+
+.sso-box,
+.lpf_login_box,
+.login-panel,
+.lpf_login_container {
+    width: 290px;
+
+    box-sizing: border-box;
+
+    margin: 8px auto;
+    padding: 18px;
+
+    background: #ffffff;
+
+    border: none;
+    border-radius: 32px;
+
+    box-shadow:
+        0 16px 20px rgba(0, 0, 0, 0.25),
+        0 0 25px rgba(140, 70, 255, 0.10);
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   PKI FORM
+===================================================== */
+
+.sso-box form {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =====================================================
+   PKI TITLE
+===================================================== */
+
+.sso-box h3,
+.lpf_login_box h3,
+.login-panel h3 {
+    display: block;
+
+    width: 100%;
+
+    margin: 10px auto 0;
+
+    font-family: at_Roboto-Light, "Segoe UI", Arial, sans-serif;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    text-align: center;
+
+    color: var(--accent-color);
+}
+
+
+/* =====================================================
+   PKI ICON
+===================================================== */
+
+/*
+   The actual icon graphic for atosIconFont-login_pki
+   must come from iconfont.css.
+
+   Do not redefine the icon here if iconfont.css is already
+   loaded by the page.
+*/
+
+.sso-box h3 .atosIconFont {
+    color: var(--accent-color);
+}
+
+
+/* =====================================================
+   MY DIGITAL KEY / LEGEND
+===================================================== */
+
+.sso-box legend {
+    width: 100%;
+
+    margin: 0 0 9px;
+    padding: 12px 0 0;
+
+    border: none;
+
+    color: var(--text-color);
+
+    font-family: at_Roboto-Light, "Segoe UI", Arial, sans-serif;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   PKI LOGIN BUTTON
+===================================================== */
+
+.sso-box input[type="submit"].btn {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    min-height: 48px;
+
+    margin: 24px auto 0;
+    padding: 10px;
+
+    background: var(--accent-color);
+
+    border: 2px solid var(--accent-color);
+    border-radius: 25px;
+
+    color: #ffffff;
+
+    font-family: at_Roboto-Light, "Segoe UI", Arial, sans-serif;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.3;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    white-space: normal;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    touch-action: manipulation;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+
+    transition:
+        background-color 150ms ease-in-out,
+        color 150ms ease-in-out,
+        border-color 150ms ease-in-out;
+}
+
+
+/* =====================================================
+   PKI LOGIN BUTTON HOVER
+===================================================== */
+
+.sso-box input[type="submit"].btn:hover,
+.sso-box input[type="submit"].btn:focus {
+    background: #ffffff;
+
+    color: var(--accent-color);
+
+    border-color: var(--accent-color);
+
+    box-shadow: none;
+
+    transform: none;
+}
+
+
+/* =====================================================
+   DISABLED / SENDING BUTTON
+===================================================== */
+
+.sso-box input[type="submit"].btn:disabled {
+    opacity: 0.75;
+    cursor: default;
+}
+
+
+/* =====================================================
+   INFORMATION ICON
+===================================================== */
+
+.icoInfo {
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    padding-top: 4px;
+
+    background-color: #777777;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-family: Verdana, Geneva, sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 11px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.tooltipInfo:hover .icoInfo,
+.tooltipInfo:focus .icoInfo {
+    background-color: #5b5b5b;
+}
+
+
+/* =====================================================
+   INFORMATION TOOLTIP CONTAINER
+===================================================== */
+
+.tooltipInfo {
+    position: relative;
+
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    margin: 0;
+
+    padding: 4px 0 0 10px;
+
+    overflow: visible;
+
+    vertical-align: middle;
+
+    line-height: 10px;
+
+    cursor: help;
+
+    outline: none;
+}
+
+
+/* =====================================================
+   INFORMATION TOOLTIP
+===================================================== */
+
+.tooltipInfo > div {
+    position: absolute;
+
+    left: 0;
+    bottom: 15px;
+
+    display: none;
+
+    width: 190px;
+
+    margin-left: -100px;
+
+    padding: 0 0 19px 0;
+
+    background: transparent;
+
+    z-index: 50;
+}
+
+
+/* Show tooltip */
+
+.tooltipInfo:hover > div,
+.tooltipInfo:focus > div,
+.tooltipInfo > div.isFocused {
+    display: block;
+}
+
+
+/* =====================================================
+   TOOLTIP TEXT BOX
+===================================================== */
+
+.tooltipInfo > div > p {
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 8px;
+
+    background: #4c4c4c;
+
+    color: #ffffff;
+
+    border-radius: 3px;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 1.3;
+
+    text-align: left;
+
+    box-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   TOOLTIP ARROW
+===================================================== */
+
+.tooltipInfo > div::after {
+    content: "";
+
+    position: absolute;
+
+    right: 75px;
+    bottom: 8px;
+
+    width: 0;
+    height: 0;
+
+    border: 6px solid transparent;
+
+    border-top-color: #4c4c4c;
+}
+
+
+/* =====================================================
+   WARNING TOOLTIP
+===================================================== */
+
+.icoWarn {
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    padding-top: 4px;
+
+    background-color: #ff8040;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-family: Verdana, Geneva, sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 11px;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.tooltipWarn {
+    position: relative;
+
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    margin: 0;
+
+    padding: 4px 0 0 10px;
+
+    vertical-align: middle;
+
+    cursor: help;
+}
+
+
+/* =====================================================
+   ERROR MESSAGE
+===================================================== */
+
+.lpf_error_body,
+.sso-box .lpf_error_body,
+.lpf_login_box .lpf_error_body,
+.login-panel .lpf_error_body,
+.lpf_login_container .lpf_error_body,
+.error_message,
+.failList > p {
+    display: block;
+
+    margin: 12px 0 15px;
+
+    color: #d13438;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 20px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   ALTERNATIVE LOGIN OPTIONS
+===================================================== */
+
+.alternative {
+    margin-top: 17px;
+
+    text-align: center;
+}
+
+.alternative h2 {
+    margin: 0 0 13px;
+
+    color: #ffffff;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 18px;
+    font-weight: 400;
+
+    line-height: 24px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   ALTERNATIVE LOGIN LIST
+===================================================== */
+
+.alternative ul {
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 18px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+.alternative ul li {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   ALTERNATIVE LOGIN BUTTON
+   AUTH / OTP / DAS / BULL
+===================================================== */
+
+.alternative li button {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 5px;
+
+    min-width: 54px;
+
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    text-align: center;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   ALTERNATIVE LOGIN CIRCLES
+===================================================== */
+
+.alternative li button span.atosIconFont {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    background: #ffffff;
+
+    color: #777777;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+
+    overflow: hidden;
+
+    box-shadow: none;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* =====================================================
+   ALTERNATIVE LOGIN HOVER
+===================================================== */
+
+.alternative li button:hover,
+.alternative li button:focus {
+    color: #ffffff;
+}
+
+.alternative li button:hover span.atosIconFont,
+.alternative li button:focus span.atosIconFont {
+    background: var(--accent-color);
+
+    color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   BULL ICON
+===================================================== */
+
+.logo-img-eviden::before {
+    content: "";
+
+    display: block;
+
+    width: 25px;
+    height: 25px;
+
+    margin: 0 auto;
+
+    background-image: url(/portal/assets/images/BULL_O.svg);
+
+    background-size: 44px 44px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    filter: grayscale(1);
+}
+
+.logo-img-eviden:hover::before {
+    filter: grayscale(0);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer,
+.sso footer,
+.sso.stickyFooter footer {
+    position: fixed;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+
+    width: 100%;
+    min-height: 57px;
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 7px 20px 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #a04ff5 0%,
+            #9254ef 45%,
+            #7858eb 100%
+        );
+
+    border: none;
+
+    color: #ffffff;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    line-height: 15px;
+
+    text-align: center;
+
+    z-index: 1000;
+}
+
+
+/* =====================================================
+   FOOTER COPYRIGHT
+===================================================== */
+
+footer p,
+.sso footer p {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    margin: 0 0 1px;
+
+    padding: 0;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    line-height: 15px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   FOOTER NAVIGATION
+===================================================== */
+
+footer nav,
+.sso footer nav {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+footer nav ul,
+.sso footer nav ul {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 27px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li,
+.sso footer nav ul li {
+    display: block;
+
+    width: auto;
+
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li a,
+footer nav ul li a:visited,
+.sso footer nav ul li a,
+.sso footer nav ul li a:visited {
+    color: #ffffff;
+
+    font-size: 12px;
+
+    line-height: 15px;
+
+    font-weight: 400;
+
+    text-decoration: underline;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+footer nav ul li a:hover,
+.sso footer nav ul li a:hover {
+    color: #ffffff;
+
+    opacity: 0.8;
+
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        overflow-y: auto;
+    }
+
+    .top-bar {
+        top: 18px;
+    }
+
+    .top-bar-brand svg,
+    .top-bar-brand img {
+        width: 165px;
+    }
+
+    .top-bar-brand svg path {
+        fill: #ffffff;
+    }
+
+    .contentsso {
+        min-height: 100vh;
+
+        padding-top: 85px;
+        padding-bottom: 95px;
+    }
+
+    .sso-box,
+    .lpf_login_box,
+    .login-panel,
+    .lpf_login_container {
+        width: 285px;
+        max-width: calc(100% - 30px);
+
+        padding: 18px;
+
+        border-radius: 27px;
+    }
+
+    .sso-box h3,
+    .lpf_login_box h3,
+    .login-panel h3 {
+        font-size: 18px;
+    }
+
+    .sso-box legend {
+        font-size: 15px;
+    }
+
+    .sso-box input[type="submit"].btn {
+        min-height: 48px;
+
+        font-size: 15px;
+    }
+
+    .alternative {
+        margin-top: 15px;
+    }
+
+    .alternative h2 {
+        margin-bottom: 12px;
+
+        font-size: 16px;
+    }
+
+    .alternative ul {
+        gap: 10px;
+    }
+
+    .alternative li button span.atosIconFont {
+        width: 46px;
+        height: 46px;
+
+        font-size: 20px;
+    }
+
+    .alternative li button {
+        font-size: 13px;
+    }
+
+    .logo-img-eviden::before {
+        background-image:
+            url(/portal/assets/images/BULL_W.svg);
+
+        filter: grayscale(0);
+    }
+
+    footer,
+    .sso footer,
+    .sso.stickyFooter footer {
+        min-height: 61px;
+
+        padding: 7px 8px 6px;
+
+        font-size: 10px;
+
+        line-height: 14px;
+    }
+
+    footer p,
+    .sso footer p {
+        font-size: 10px;
+
+        line-height: 14px;
+    }
+
+    footer nav ul,
+    .sso footer nav ul {
+        gap: 5px 16px;
+
+        flex-wrap: wrap;
+    }
+
+    footer nav ul li a,
+    footer nav ul li a:visited,
+    .sso footer nav ul li a,
+    .sso footer nav ul li a:visited {
+        font-size: 10px;
+
+        line-height: 14px;
+    }
+}
